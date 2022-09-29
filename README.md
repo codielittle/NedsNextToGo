@@ -29,7 +29,7 @@ To run the web app, run `npm start`. This will start a development server.
 
 Open `localhost:3000` in your browser.
 
-### Built With
+## Built With
 
 This web app has been built with React 18.2.0.
 
