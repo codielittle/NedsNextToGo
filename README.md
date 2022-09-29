@@ -15,11 +15,11 @@ The requirements that have been implemented are:
 Follow these steps:
 
 ```sh
-    `git clone ...`
+    git clone https://github.com/codielittle/NedsNextToGo.git
 
-    `cd NedsNextToGo`
+    cd NedsNextToGo
 
-    `npm install`
+    npm install
 
 ```
 
