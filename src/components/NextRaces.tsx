@@ -132,6 +132,7 @@ export const NextRaces = () => {
             // Filter based on the results of the API call, rather than the current array
             let filteredArray = apiResponseData.filter(filterArray);
 
+            // If array contains more than 5 races
             if (filteredArray.length > 5) {
                 var sliced = filteredArray.slice(0, 5);
                 setNextRacesData(sliced);
@@ -183,11 +184,13 @@ export const NextRaces = () => {
         }
     }
 
+    // When component mounts, fetch races
     useEffect(() => {
         fetchRaces(40).then((data) => {
             const raceList = data as Array<Race>;
             setApiResponseData(raceList);
 
+            // If more than 5 races are returned
             if (raceList.length > 5) {
                 let sliced = raceList.slice(0, 5) as Array<Race>;
                 setNextRacesData(sliced);
